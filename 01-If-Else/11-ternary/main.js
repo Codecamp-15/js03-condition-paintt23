@@ -1,4 +1,10 @@
-
 let login = prompt("Enter username");
-message =login == 'Employee'?'Hello' :login ==='Director'? 'Greeting':login ==''? 'No login' :"";
-alert(message) ;
+let message;
+
+login == "Employee"
+  ? (message = "Hello")
+  : login == "Director"
+  ? (message = "Greetings")
+  : login == ""
+  ? (message = "No login")
+  : (message = "");
